@@ -43,11 +43,6 @@
 						<div class="content">
 							<ul class="feature-icons">
 								<li class="icon solid fa-laptop">
-									<a href="https://projecteuler.net/problem=31">Problem 31: Coin Sums</a></li>
-								<li class="icon solid fa-bolt">
-									<a href="https://github.com/HaroldAlmon/ProjectEuler/blob/master/src/main/java/com/translationdata/p030/P031_CoinSumsDynamicPrograming.java">31: <strong>Java</strong> Solution</a></li>
-
-								<li class="icon solid fa-laptop">
 									<a href="https://projecteuler.net/problem=125">Problem 125: Palindromic Sums</a></li>
 								<li class="icon solid fa-bolt">
 									<a href="https://github.com/HaroldAlmon/ProjectEuler/blob/master/src/main/java/com/translationdata/p120/P125_PalindromicSums.java">125: <strong>Java</strong> Solution</a></li>
@@ -91,7 +86,7 @@
 					<!-- Section -->
 					<section id="p31BruteForce">
 						<header>
-							<h2>Problem 31 - Solution #1</h2>
+							<h2>Problem 31, Solution #1</h2>
 							<h3>brute force</h3>
 							<p>Brute force is not so good for <strong>Big Data. </strong>
 							This solution was the easiest to write but has the worst performance. 
@@ -115,17 +110,16 @@
 						</div>
 					</section>
 					
-										<!-- Section -->
+					<!-- Section -->
 					<section id="p31Dynamic">
 						<header>
-							<h2>Problem 31 - Solution #2</h2>
+							<h2>Problem 31, Solution #2</h2>
 							<h3>dynamic programming</h3>
-							<p>Brute force is not so good for <strong>Big Data. </strong>
-							This solution was the easiest to write but has the worst performance. 
-							Using Java on dual core I-5 yielded a run time of about 3,300 milliseconds. <strong>Mutations</strong> in the code that make
-							running the code in parallel, on multiple processors, difficult for the Java compiler.
-							This solution is <strong>too slow.</strong>
-							 </p>
+							This solution was the most  difficult to write but has much better performance than the brute force solution. 
+							Using Java on dual core I-5 yielded a run time of 0 milliseconds because the JUnit timer only resolves to milliseconds. 
+							<p>There are no <strong>mutations</strong> in the code.
+							This can make dynamic programming with no mutations an excellent choice for <strong>Big Data</strong> solutions.
+							</p>
 												
 							<ul class="actions">
 								<li><a href="#topcoder" class="arrow scrolly"><span class="label">Next</span></a></li>
@@ -138,8 +132,8 @@
 									<a href="https://projecteuler.net/problem=31">Problem 31: Coin Sums</a></li>
 								<li class="icon solid fa-bolt">
 									<a href="https://github.com/HaroldAlmon/ProjectEuler/blob/master/src/main/java/com/translationdata/p030/P031_CoinSumsDynamicPrograming.java">31: <strong>Java</strong> Solution</a></li>
-
 							</ul>
+							<img src="images/DynamicProgrammingJUnit.jpg" alt="" />	
 						</div>
 					</section>
 					
