@@ -43,11 +43,6 @@
 						<div class="content">
 							<ul class="feature-icons">
 								<li class="icon solid fa-laptop">
-									<a href="https://projecteuler.net/problem=31">Problem 31: Coin Sums</a></li>
-								<li class="icon solid fa-bolt">
-									<a href="https://github.com/HaroldAlmon/ProjectEuler/blob/master/src/main/java/com/translationdata/p030/P031_CoinSumsDynamicPrograming.java">31: <strong>Java</strong> Solution</a></li>
-
-								<li class="icon solid fa-laptop">
 									<a href="https://projecteuler.net/problem=125">Problem 125: Palindromic Sums</a></li>
 								<li class="icon solid fa-bolt">
 									<a href="https://github.com/HaroldAlmon/ProjectEuler/blob/master/src/main/java/com/translationdata/p120/P125_PalindromicSums.java">125: <strong>Java</strong> Solution</a></li>
@@ -76,10 +71,10 @@
 							<h2>Pencil and paper Analysis</h2>
 							<p>How many ways can you partition 15 pence?</p>
 							<p><strong>Why does that matter?</strong> If you can solve for 15 pence, you will get a general algorithm that works with any denomination and coin set.</p>
-							<p>The paper analysis on the right lead to the solution to the previous <strong>Problem 31: Coin Sums.</strong></p>
+							<p>The paper analysis on the right lead to the solution to the next <strong>Problem 31: Coin Sums.</strong></p>
 														
 							<ul class="actions">
-								<li><a href="#topcoder" class="arrow scrolly"><span class="label">Next</span></a></li>
+								<li><a href="#p31BruteForce" class="arrow scrolly"><span class="label">Next</span></a></li>
 							</ul>
 						</header>
 				
@@ -87,27 +82,83 @@
 							<span class="image main"><img src="images/Partition-15-Pence-1024x983.jpg" alt="" /></span>
 						</div>
 					</section>
+					
+					<!-- Section -->
+					<section id="p31BruteForce">
+						<header>
+							<h2>Problem 31, Solution #1</h2>
+							<h3>brute force</h3>
+							<p>Brute force is not so good for <strong>Big Data. </strong>
+							This solution was the easiest to write but has the worst performance. 
+							Using Java on dual core I-5 yielded a run time of 3,300 milliseconds. <strong>Mutations</strong> in the code that make
+							running the code in parallel, on multiple processors, difficult for the Java compiler.
+							This solution is <strong>too slow.</strong>
+							 </p>
+												
+							<ul class="actions">
+								<li><a href="#p31Dynamic" class="arrow scrolly"><span class="label">Next</span></a></li>
+							</ul>
+						</header>
+				
+						<div class="content">
+							<ul class="feature-icons">
+								<li class="icon solid fa-laptop">
+									<a href="https://projecteuler.net/problem=31">Problem 31: Coin Sums</a></li>
+								<li class="icon solid fa-bolt">
+									<a href="https://github.com/HaroldAlmon/ProjectEuler/blob/master/src/main/java/com/translationdata/p030/P031_CoinSumsBrureForce.java">31: <strong>Brute Force</strong> Solution</a></li>
+							</ul>
+							<img src="images/BruteForceJUnit.jpg" alt="" />	
+						</div>
+					</section>
+					
+					<!-- Section -->
+					<section id="p31Dynamic">
+						<header>
+							<h2>Problem 31, Solution #2</h2>
+							<h3>dynamic programming</h3>
+							This solution was the most  difficult to write but has much better performance than the brute force solution. 
+							Using Java on dual core I-5 yielded a run time of 0 milliseconds on the the JUnit timer. 
+							<p>There are no <strong>mutations</strong> in the code.
+							This can make dynamic programming with no mutations an excellent choice for <strong>Big Data</strong> solutions.
+							</p>
+												
+							<ul class="actions">
+								<li><a href="#topcoder" class="arrow scrolly"><span class="label">Next</span></a></li>
+							</ul>
+						</header>
+				
+						<div class="content">
+							<ul class="feature-icons">
+								<li class="icon solid fa-laptop">
+									<a href="https://projecteuler.net/problem=31">Problem 31: Coin Sums</a></li>
+								<li class="icon solid fa-bolt">
+									<a href="https://github.com/HaroldAlmon/ProjectEuler/blob/master/src/main/java/com/translationdata/p030/P031_CoinSumsDynamicPrograming.java">31: <strong>Java</strong> Solution</a></li>
+							</ul>
+							<img src="images/DynamicProgrammingJUnit.jpg" alt="" />	
+						</div>
+					</section>
+					
 
 				<!-- Section -->
 					<section id="topcoder">
 						<header>
 							<h2>Team TopCoder</h2>
+							<p><strong>TopCoder.</strong> I have a fair number of solutions to various TopCoder problems.  
+							TopCoder problems are more general in nature that ProjectEuler problems.
+							</p>
+							<p>You can look up the problems at the <a href="https://community.topcoder.com/tc?module=ProblemArchive" target="_blank">TopCoder Archive</a>
+							and see my solutions on my 
+							<a href="https://github.com/HaroldAlmon/TopCoder/tree/master/src/Div2_Level1" target="_blank">GitHub Site</a>.
+							</p>
 							<ul class="actions">
 								<li><a href="#gotProblems" class="arrow scrolly"><span class="label">Next</span></a></li>
 							</ul>
 						</header>
 						<div class="content">
-							<p><strong>TopCoder.</strong> I have a fair number of solutions to various TopCoder problems.  
-							TopCoder problems are more general in nature that ProjectEuler project.
-							The problem designers show enormous skill and imagination when they create these problems.
-							The range of problems is absolutely stunning.</p>
-							<p>You can look up the problems at the <a href="https://community.topcoder.com/tc?module=ProblemArchive" target="_blank">TopCoder Archive</a>
-							and see my solutions on my 
-							<a href="https://github.com/HaroldAlmon/TopCoder/tree/master/src/Div2_Level1" target="_blank">GitHub Site</a>.
-							</p>
+
 							<ul class="feature-icons">
 								<li class="icon solid fa-laptop">
-									<a href="https://community.topcoder.com/stat?c=problem_statement&pm=13604">Bacteria Colony</a></li>
+									<a href="https://community.topcoder.com/stat?c=problem_statement&pm=13604">Problem: Bacteria Colony</a></li>
 								<li class="icon solid fa-bolt">
 									<a href="https://github.com/HaroldAlmon/TopCoder/blob/master/src/Div2_Level1/SRM645_BacteriesColony.java">Solution</a></li>
 
