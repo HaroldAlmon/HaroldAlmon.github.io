@@ -1,3 +1,3 @@
-Harold's Portfolio
+Harold's Portfolio.
 
 What can I do for you?
